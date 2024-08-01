@@ -303,8 +303,8 @@ button {
 
 /* --------------------experience--------------------*/
 
-.container-experience {
-  padding: 80px 15px;
+.experience-block {
+  padding: 80px 0;
 }
 
 .experience-main {
@@ -360,8 +360,8 @@ button {
 
 /* ---------------------practice---------------------*/
 
-.container-practice {
-  padding: 80px 15px;
+.practice-block {
+  padding: 80px 0px;
 }
 
 .practice-main {
@@ -403,8 +403,11 @@ button {
 
 /* ---------------------whoweare---------------------*/
 
-.whoweare-container {
+.whoweare-block {
   padding: 100px 0px;
+}
+
+.whoweare-container {
   background-color: #fff;
 }
 
@@ -483,12 +486,12 @@ button {
 
 /* ---------------------clients---------------------*/
 
-.clients-section {
+.clients-block {
   background: #fafafa;
   position: relative;
 }
 
-.clients-section::after {
+.clients-block::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -502,7 +505,6 @@ button {
   position: relative;
   z-index: 2;
   padding-bottom: 20px;
-  margin-bottom: 41px;
 }
 
 .clients-logo-container {
@@ -590,4 +592,122 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* ---------------------clients---------------------*/
+
+.getintouch-block {
+  padding: 80px 0 148px 0;
+  background: #f3f3f3;
+}
+
+.getintouch-main {
+  margin-bottom: 80px;
+}
+
+.getintouch-main-text {
+  text-align: center;
+}
+
+.getintouch-content-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 32.5px;
+  height: 393px;
+}
+
+.getintouch-column-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 50px 40px;
+  width: 328px;
+  height: 333px;
+  background: #fff;
+  transition: padding 250ms cubic-bezier(0.4, 0, 0.2, 1), height 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.getintouch-column-item:hover {
+  padding: 80px 40px;
+  height: 393px;
+  background-color: #252b42;
+}
+
+.getintouch-icon-svg {
+  width: 73px;
+  height: 72px;
+  fill: #0d5c63;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.getintouch-column-item:hover .getintouch-icon-svg {
+  fill: #ffffff;
+}
+
+.getintouch-emails {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.71429;
+  letter-spacing: 0.01em;
+  text-align: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.getintouch-column-item:hover .getintouch-link-email {
+  color: #ffffff;
+}
+
+.getintouch-email-one:hover,
+.getintouch-email-two:hover {
+  text-decoration: underline;
+}
+
+.getintouch-link-email {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.71429;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #252b42;
+}
+
+.getintouch-column-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #252b42;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.getintouch-column-item:hover .getintouch-column-text {
+  color: #ffffff;
+}
+
+.getintouch-button {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.71429;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #ff7b47;
+  border: 1px solid #ff7b47;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: transparent;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.getintouch-column-item:hover .getintouch-button {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.getintouch-button:hover {
+  background-color: #ff7b47;
+  color: #ffffff;
 }
