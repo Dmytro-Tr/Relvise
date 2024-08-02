@@ -16,7 +16,7 @@ body {
   line-height: 1.43;
   letter-spacing: 0.01em;
   color: #737373;
-  background: #fafafa;
+  background-color: #fafafa;
 }
 
 h1,
@@ -129,7 +129,7 @@ button {
 
 .main-block {
   position: relative;
-  background: none;
+  background-color: transparent;
 }
 
 .main-block-container {
@@ -344,7 +344,7 @@ button {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background: #fff;
+  background-color: #fff;
   width: 240px;
   min-height: 209px;
 }
@@ -393,7 +393,7 @@ button {
   flex: 1 1 auto;
 }
 
-.practice-content-text-caption {
+.title-four {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
@@ -405,9 +405,6 @@ button {
 
 .whoweare-block {
   padding: 100px 0px;
-}
-
-.whoweare-container {
   background-color: #fff;
 }
 
@@ -487,8 +484,8 @@ button {
 /* ---------------------clients---------------------*/
 
 .clients-block {
-  background: #fafafa;
   position: relative;
+  background-color: #fafafa;
 }
 
 .clients-block::after {
@@ -592,13 +589,19 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-button:hover {
+  background-color: #0d5c63;
 }
 
 /* ---------------------clients---------------------*/
 
 .getintouch-block {
   padding: 80px 0 148px 0;
-  background: #f3f3f3;
+  background-color: #f3f3f3;
 }
 
 .getintouch-main {
@@ -626,7 +629,7 @@ button {
   padding: 50px 40px;
   width: 328px;
   height: 333px;
-  background: #fff;
+  background-color: #fff;
   transition: padding 250ms cubic-bezier(0.4, 0, 0.2, 1), height 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -675,16 +678,11 @@ button {
 }
 
 .getintouch-column-text {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.01em;
   text-align: center;
-  color: #252b42;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.getintouch-column-item:hover .getintouch-column-text {
+.getintouch-column-item:hover .title-four {
   color: #ffffff;
 }
 
@@ -710,4 +708,178 @@ button {
 .getintouch-button:hover {
   background-color: #ff7b47;
   color: #ffffff;
+}
+
+/* ---------------------contactus---------------------*/
+
+.contactus-block {
+  background-color: #fafafa;
+  padding: 40px 0;
+}
+
+.contactus-container {
+  display: flex;
+  align-items: center;
+}
+
+.contactus-main {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex-grow: 1;
+}
+
+.contactus-button-content {
+  padding-right: 15px;
+}
+
+.contactus-button {
+  border-radius: 5px;
+  padding: 15px 40px;
+  width: 163px;
+  height: 58px;
+  background-color: #ff7b47;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #fff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contactus-button:hover {
+  background-color: #0d5c63;
+}
+
+/* ---------------------footer---------------------*/
+
+.footer-top {
+  background-color: #17213c;
+  padding: 50px 0;
+}
+
+.fotter-top-container {
+  display: flex;
+  gap: 30px;
+}
+
+.fotter-column {
+  width: calc((100% - 120px) / 5);
+}
+
+.fotter-column-title-four {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: #fff;
+  padding: 0 0 20px 0;
+}
+
+.footer-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* .footer-menu-list:hover {
+  text-decoration: underline;
+} */
+
+.footer-menu-item {
+  box-sizing: border-box;
+}
+
+.footer-menu-link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.01em;
+  color: #fff;
+}
+
+.footer-contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-contacts-tel {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.71429;
+  letter-spacing: 0.01em;
+  color: #fff;
+  font-style: normal;
+}
+
+.footer-contacts-map-link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.71429;
+  letter-spacing: 0.01em;
+  color: #fff;
+  font-style: normal;
+}
+
+.footer-contacts-email {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.71429;
+  letter-spacing: 0.01em;
+  color: #fff;
+  font-style: normal;
+}
+
+.footer-bottom {
+  background-color: #fafafa;
+  padding: 25px 0;
+}
+
+.fotter-bottom-container {
+  display: flex;
+}
+
+.fotter-bottom-text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.71429;
+  letter-spacing: 0.01em;
+  color: #737373;
+  display: flex;
+  flex-grow: 1;
+  align-content: center;
+  justify-items: center;
+}
+
+.footer-bottom-icon {
+  padding: 0 40px 0 0;
+}
+
+.footer-bottom-icon-list {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-bottom-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social-facebook {
+  fill: #335bf5;
+}
+
+.footer-social-instagram {
+  fill: #e51f5a;
+}
+
+.footer-social-twitter {
+  fill: #21a6df;
+}
+
+.footer-social-youtube {
+  fill: #e42f08;
 }
